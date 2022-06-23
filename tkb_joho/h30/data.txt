@@ -1,0 +1,8 @@
+10001 Math 95
+10003 Science 90
+10002 Science 83
+10005 Math 68
+10002 Math 86
+10004 Science 75
+10001 Science 100
+10002 English 92
