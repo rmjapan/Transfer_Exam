@@ -49,11 +49,25 @@ void make_permutation2(char pattern[],int n){
     }
 }
 
+void make_permutation3(char pattern[],int n){
+    if(n<=1){
+        printf("%s\n",pattern);
+    }else{
+        int n1=n-1;
+        for(int i=0;i<n;i++){
+            if(i < n1) swap(pattern, i, n1);
+            make_permutation2(pattern, n1);
+            if(i < n1) swap(pattern, i, n1);
+        }
+    }
+}
+
+
 
 int main(int argc, const char * argv[]) {
     char pattern[]="ABC";
     //make_permutation(pattern, strlen(pattern));
-    make_permutation2(pattern, 3);
+    make_permutation3(pattern, 3);
     printf("%d", res);
     return 0;
 }
